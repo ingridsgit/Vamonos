@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8440FF6222AA855600CD00B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF6122AA855600CD00B7 /* AppDelegate.swift */; };
+		8440FF6422AA855600CD00B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF6322AA855600CD00B7 /* ViewController.swift */; };
+		8440FF6722AA855600CD00B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440FF6522AA855600CD00B7 /* Main.storyboard */; };
+		8440FF6922AA855600CD00B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8440FF6822AA855600CD00B7 /* Assets.xcassets */; };
+		8440FF6C22AA855600CD00B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440FF6A22AA855600CD00B7 /* LaunchScreen.storyboard */; };
+		8440FF7722AA855700CD00B7 /* VamonosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF7622AA855700CD00B7 /* VamonosTests.swift */; };
+		8440FF8222AA855700CD00B7 /* VamonosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF8122AA855700CD00B7 /* VamonosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8440FF7322AA855700CD00B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8440FF5622AA855600CD00B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8440FF5D22AA855600CD00B7;
+			remoteInfo = Vamonos;
+		};
+		8440FF7E22AA855700CD00B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8440FF5622AA855600CD00B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8440FF5D22AA855600CD00B7;
+			remoteInfo = Vamonos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8440FF5E22AA855600CD00B7 /* Vamonos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vamonos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8440FF6122AA855600CD00B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8440FF6322AA855600CD00B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8440FF6622AA855600CD00B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8440FF6822AA855600CD00B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8440FF6B22AA855600CD00B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8440FF6D22AA855600CD00B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8440FF7222AA855700CD00B7 /* VamonosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VamonosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8440FF7622AA855700CD00B7 /* VamonosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VamonosTests.swift; sourceTree = "<group>"; };
+		8440FF7822AA855700CD00B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8440FF7D22AA855700CD00B7 /* VamonosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VamonosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8440FF8122AA855700CD00B7 /* VamonosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VamonosUITests.swift; sourceTree = "<group>"; };
+		8440FF8322AA855700CD00B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8440FF5B22AA855600CD00B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8440FF6F22AA855700CD00B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8440FF7A22AA855700CD00B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8440FF5522AA855600CD00B7 = {
+			isa = PBXGroup;
+			children = (
+				8440FF6022AA855600CD00B7 /* Vamonos */,
+				8440FF7522AA855700CD00B7 /* VamonosTests */,
+				8440FF8022AA855700CD00B7 /* VamonosUITests */,
+				8440FF5F22AA855600CD00B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8440FF5F22AA855600CD00B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8440FF5E22AA855600CD00B7 /* Vamonos.app */,
+				8440FF7222AA855700CD00B7 /* VamonosTests.xctest */,
+				8440FF7D22AA855700CD00B7 /* VamonosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8440FF6022AA855600CD00B7 /* Vamonos */ = {
+			isa = PBXGroup;
+			children = (
+				8440FF6122AA855600CD00B7 /* AppDelegate.swift */,
+				8440FF6322AA855600CD00B7 /* ViewController.swift */,
+				8440FF6522AA855600CD00B7 /* Main.storyboard */,
+				8440FF6822AA855600CD00B7 /* Assets.xcassets */,
+				8440FF6A22AA855600CD00B7 /* LaunchScreen.storyboard */,
+				8440FF6D22AA855600CD00B7 /* Info.plist */,
+			);
+			path = Vamonos;
+			sourceTree = "<group>";
+		};
+		8440FF7522AA855700CD00B7 /* VamonosTests */ = {
+			isa = PBXGroup;
+			children = (
+				8440FF7622AA855700CD00B7 /* VamonosTests.swift */,
+				8440FF7822AA855700CD00B7 /* Info.plist */,
+			);
+			path = VamonosTests;
+			sourceTree = "<group>";
+		};
+		8440FF8022AA855700CD00B7 /* VamonosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8440FF8122AA855700CD00B7 /* VamonosUITests.swift */,
+				8440FF8322AA855700CD00B7 /* Info.plist */,
+			);
+			path = VamonosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8440FF5D22AA855600CD00B7 /* Vamonos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8440FF8622AA855700CD00B7 /* Build configuration list for PBXNativeTarget "Vamonos" */;
+			buildPhases = (
+				8440FF5A22AA855600CD00B7 /* Sources */,
+				8440FF5B22AA855600CD00B7 /* Frameworks */,
+				8440FF5C22AA855600CD00B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vamonos;
+			productName = Vamonos;
+			productReference = 8440FF5E22AA855600CD00B7 /* Vamonos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8440FF7122AA855700CD00B7 /* VamonosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8440FF8922AA855700CD00B7 /* Build configuration list for PBXNativeTarget "VamonosTests" */;
+			buildPhases = (
+				8440FF6E22AA855700CD00B7 /* Sources */,
+				8440FF6F22AA855700CD00B7 /* Frameworks */,
+				8440FF7022AA855700CD00B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8440FF7422AA855700CD00B7 /* PBXTargetDependency */,
+			);
+			name = VamonosTests;
+			productName = VamonosTests;
+			productReference = 8440FF7222AA855700CD00B7 /* VamonosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8440FF7C22AA855700CD00B7 /* VamonosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8440FF8C22AA855700CD00B7 /* Build configuration list for PBXNativeTarget "VamonosUITests" */;
+			buildPhases = (
+				8440FF7922AA855700CD00B7 /* Sources */,
+				8440FF7A22AA855700CD00B7 /* Frameworks */,
+				8440FF7B22AA855700CD00B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8440FF7F22AA855700CD00B7 /* PBXTargetDependency */,
+			);
+			name = VamonosUITests;
+			productName = VamonosUITests;
+			productReference = 8440FF7D22AA855700CD00B7 /* VamonosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8440FF5622AA855600CD00B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					8440FF5D22AA855600CD00B7 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					8440FF7122AA855700CD00B7 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 8440FF5D22AA855600CD00B7;
+					};
+					8440FF7C22AA855700CD00B7 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 8440FF5D22AA855600CD00B7;
+					};
+				};
+			};
+			buildConfigurationList = 8440FF5922AA855600CD00B7 /* Build configuration list for PBXProject "Vamonos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8440FF5522AA855600CD00B7;
+			productRefGroup = 8440FF5F22AA855600CD00B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8440FF5D22AA855600CD00B7 /* Vamonos */,
+				8440FF7122AA855700CD00B7 /* VamonosTests */,
+				8440FF7C22AA855700CD00B7 /* VamonosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8440FF5C22AA855600CD00B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8440FF6C22AA855600CD00B7 /* LaunchScreen.storyboard in Resources */,
+				8440FF6922AA855600CD00B7 /* Assets.xcassets in Resources */,
+				8440FF6722AA855600CD00B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8440FF7022AA855700CD00B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8440FF7B22AA855700CD00B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8440FF5A22AA855600CD00B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8440FF6422AA855600CD00B7 /* ViewController.swift in Sources */,
+				8440FF6222AA855600CD00B7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8440FF6E22AA855700CD00B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8440FF7722AA855700CD00B7 /* VamonosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8440FF7922AA855700CD00B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8440FF8222AA855700CD00B7 /* VamonosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8440FF7422AA855700CD00B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8440FF5D22AA855600CD00B7 /* Vamonos */;
+			targetProxy = 8440FF7322AA855700CD00B7 /* PBXContainerItemProxy */;
+		};
+		8440FF7F22AA855700CD00B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8440FF5D22AA855600CD00B7 /* Vamonos */;
+			targetProxy = 8440FF7E22AA855700CD00B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8440FF6522AA855600CD00B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8440FF6622AA855600CD00B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8440FF6A22AA855600CD00B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8440FF6B22AA855600CD00B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8440FF8422AA855700CD00B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8440FF8522AA855700CD00B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8440FF8722AA855700CD00B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Vamonos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ingridbazin.ios.Vamonos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8440FF8822AA855700CD00B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Vamonos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ingridbazin.ios.Vamonos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8440FF8A22AA855700CD00B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VamonosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ingridbazin.ios.VamonosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vamonos.app/Vamonos";
+			};
+			name = Debug;
+		};
+		8440FF8B22AA855700CD00B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VamonosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ingridbazin.ios.VamonosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vamonos.app/Vamonos";
+			};
+			name = Release;
+		};
+		8440FF8D22AA855700CD00B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VamonosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ingridbazin.ios.VamonosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vamonos;
+			};
+			name = Debug;
+		};
+		8440FF8E22AA855700CD00B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VamonosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ingridbazin.ios.VamonosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vamonos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8440FF5922AA855600CD00B7 /* Build configuration list for PBXProject "Vamonos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8440FF8422AA855700CD00B7 /* Debug */,
+				8440FF8522AA855700CD00B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8440FF8622AA855700CD00B7 /* Build configuration list for PBXNativeTarget "Vamonos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8440FF8722AA855700CD00B7 /* Debug */,
+				8440FF8822AA855700CD00B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8440FF8922AA855700CD00B7 /* Build configuration list for PBXNativeTarget "VamonosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8440FF8A22AA855700CD00B7 /* Debug */,
+				8440FF8B22AA855700CD00B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8440FF8C22AA855700CD00B7 /* Build configuration list for PBXNativeTarget "VamonosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8440FF8D22AA855700CD00B7 /* Debug */,
+				8440FF8E22AA855700CD00B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8440FF5622AA855600CD00B7 /* Project object */;
+}

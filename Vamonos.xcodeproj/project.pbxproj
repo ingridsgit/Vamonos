@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30DBF35AFF6329F628577E53 /* Pods_VamonosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C47B43A184E35123623F3D /* Pods_VamonosUITests.framework */; };
+		36E8453B777E9241258E2BAD /* Pods_Vamonos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0177CD2DB65FCD7FD69D338 /* Pods_Vamonos.framework */; };
 		8440FF6222AA855600CD00B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF6122AA855600CD00B7 /* AppDelegate.swift */; };
 		8440FF6422AA855600CD00B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF6322AA855600CD00B7 /* ViewController.swift */; };
 		8440FF6722AA855600CD00B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440FF6522AA855600CD00B7 /* Main.storyboard */; };
@@ -14,6 +16,11 @@
 		8440FF6C22AA855600CD00B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440FF6A22AA855600CD00B7 /* LaunchScreen.storyboard */; };
 		8440FF7722AA855700CD00B7 /* VamonosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF7622AA855700CD00B7 /* VamonosTests.swift */; };
 		8440FF8222AA855700CD00B7 /* VamonosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF8122AA855700CD00B7 /* VamonosUITests.swift */; };
+		8440FF9022AA871300CD00B7 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF8F22AA871300CD00B7 /* DateCell.swift */; };
+		8440FF9222AA93B400CD00B7 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF9122AA93B400CD00B7 /* DateHeader.swift */; };
+		8478ECBE22AFA67D0005164D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478ECBD22AFA67D0005164D /* MainViewController.swift */; };
+		8478ECC122AFBEEF0005164D /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478ECC022AFBEEF0005164D /* DateModel.swift */; };
+		F2FC0F098C1137A836686F3C /* Pods_VamonosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3264A8E792C345E31BCB4477 /* Pods_VamonosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AAA0461BD1A56EAAF4D6597 /* Pods-VamonosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VamonosUITests.debug.xcconfig"; path = "Target Support Files/Pods-VamonosUITests/Pods-VamonosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A7EED9C0E256B92D2B9417E /* Pods-Vamonos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vamonos.release.xcconfig"; path = "Target Support Files/Pods-Vamonos/Pods-Vamonos.release.xcconfig"; sourceTree = "<group>"; };
+		22FC6669A7841581810AAAAA /* Pods-Vamonos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vamonos.debug.xcconfig"; path = "Target Support Files/Pods-Vamonos/Pods-Vamonos.debug.xcconfig"; sourceTree = "<group>"; };
+		3264A8E792C345E31BCB4477 /* Pods_VamonosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VamonosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF0CE67CA5E9AC2238EF400 /* Pods-VamonosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VamonosTests.release.xcconfig"; path = "Target Support Files/Pods-VamonosTests/Pods-VamonosTests.release.xcconfig"; sourceTree = "<group>"; };
 		8440FF5E22AA855600CD00B7 /* Vamonos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vamonos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8440FF6122AA855600CD00B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8440FF6322AA855600CD00B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,14 @@
 		8440FF7D22AA855700CD00B7 /* VamonosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VamonosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8440FF8122AA855700CD00B7 /* VamonosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VamonosUITests.swift; sourceTree = "<group>"; };
 		8440FF8322AA855700CD00B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8440FF8F22AA871300CD00B7 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		8440FF9122AA93B400CD00B7 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		8478ECBD22AFA67D0005164D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8478ECC022AFBEEF0005164D /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		A9C47B43A184E35123623F3D /* Pods_VamonosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VamonosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9734B629443A08E71BFF2D /* Pods-VamonosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VamonosUITests.release.xcconfig"; path = "Target Support Files/Pods-VamonosUITests/Pods-VamonosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DBD0497D20D20FAD0DEEEBB1 /* Pods-VamonosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VamonosTests.debug.xcconfig"; path = "Target Support Files/Pods-VamonosTests/Pods-VamonosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0177CD2DB65FCD7FD69D338 /* Pods_Vamonos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vamonos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E8453B777E9241258E2BAD /* Pods_Vamonos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FC0F098C1137A836686F3C /* Pods_VamonosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DBF35AFF6329F628577E53 /* Pods_VamonosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C285E5266E580C86ED3F848 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22FC6669A7841581810AAAAA /* Pods-Vamonos.debug.xcconfig */,
+				1A7EED9C0E256B92D2B9417E /* Pods-Vamonos.release.xcconfig */,
+				DBD0497D20D20FAD0DEEEBB1 /* Pods-VamonosTests.debug.xcconfig */,
+				5AF0CE67CA5E9AC2238EF400 /* Pods-VamonosTests.release.xcconfig */,
+				0AAA0461BD1A56EAAF4D6597 /* Pods-VamonosUITests.debug.xcconfig */,
+				CD9734B629443A08E71BFF2D /* Pods-VamonosUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8440FF5522AA855600CD00B7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				8440FF7522AA855700CD00B7 /* VamonosTests */,
 				8440FF8022AA855700CD00B7 /* VamonosUITests */,
 				8440FF5F22AA855600CD00B7 /* Products */,
+				0C285E5266E580C86ED3F848 /* Pods */,
+				E01F1892A8F54FD42B50FA77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +135,16 @@
 		8440FF6022AA855600CD00B7 /* Vamonos */ = {
 			isa = PBXGroup;
 			children = (
+				8478ECBF22AFBEB50005164D /* model */,
 				8440FF6122AA855600CD00B7 /* AppDelegate.swift */,
 				8440FF6322AA855600CD00B7 /* ViewController.swift */,
 				8440FF6522AA855600CD00B7 /* Main.storyboard */,
+				8478ECBD22AFA67D0005164D /* MainViewController.swift */,
+				8440FF9122AA93B400CD00B7 /* DateHeader.swift */,
 				8440FF6822AA855600CD00B7 /* Assets.xcassets */,
 				8440FF6A22AA855600CD00B7 /* LaunchScreen.storyboard */,
 				8440FF6D22AA855600CD00B7 /* Info.plist */,
+				8440FF8F22AA871300CD00B7 /* DateCell.swift */,
 			);
 			path = Vamonos;
 			sourceTree = "<group>";
@@ -125,6 +167,24 @@
 			path = VamonosUITests;
 			sourceTree = "<group>";
 		};
+		8478ECBF22AFBEB50005164D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8478ECC022AFBEEF0005164D /* DateModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E01F1892A8F54FD42B50FA77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0177CD2DB65FCD7FD69D338 /* Pods_Vamonos.framework */,
+				3264A8E792C345E31BCB4477 /* Pods_VamonosTests.framework */,
+				A9C47B43A184E35123623F3D /* Pods_VamonosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8440FF8622AA855700CD00B7 /* Build configuration list for PBXNativeTarget "Vamonos" */;
 			buildPhases = (
+				001E82FEA9A554037D7A4F7F /* [CP] Check Pods Manifest.lock */,
 				8440FF5A22AA855600CD00B7 /* Sources */,
 				8440FF5B22AA855600CD00B7 /* Frameworks */,
 				8440FF5C22AA855600CD00B7 /* Resources */,
+				667150540A2EB26CD1A04C24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8440FF8922AA855700CD00B7 /* Build configuration list for PBXNativeTarget "VamonosTests" */;
 			buildPhases = (
+				241185D4FD8BB2652B1E6555 /* [CP] Check Pods Manifest.lock */,
 				8440FF6E22AA855700CD00B7 /* Sources */,
 				8440FF6F22AA855700CD00B7 /* Frameworks */,
 				8440FF7022AA855700CD00B7 /* Resources */,
@@ -167,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8440FF8C22AA855700CD00B7 /* Build configuration list for PBXNativeTarget "VamonosUITests" */;
 			buildPhases = (
+				491214F35C8B6A4DEDA75271 /* [CP] Check Pods Manifest.lock */,
 				8440FF7922AA855700CD00B7 /* Sources */,
 				8440FF7A22AA855700CD00B7 /* Frameworks */,
 				8440FF7B22AA855700CD00B7 /* Resources */,
@@ -251,13 +315,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		001E82FEA9A554037D7A4F7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vamonos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		241185D4FD8BB2652B1E6555 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VamonosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		491214F35C8B6A4DEDA75271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VamonosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		667150540A2EB26CD1A04C24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vamonos/Pods-Vamonos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vamonos/Pods-Vamonos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vamonos/Pods-Vamonos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8440FF5A22AA855600CD00B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8440FF6422AA855600CD00B7 /* ViewController.swift in Sources */,
+				8440FF9022AA871300CD00B7 /* DateCell.swift in Sources */,
+				8440FF9222AA93B400CD00B7 /* DateHeader.swift in Sources */,
 				8440FF6222AA855600CD00B7 /* AppDelegate.swift in Sources */,
+				8478ECBE22AFA67D0005164D /* MainViewController.swift in Sources */,
+				8478ECC122AFBEEF0005164D /* DateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +584,7 @@
 		};
 		8440FF8722AA855700CD00B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22FC6669A7841581810AAAAA /* Pods-Vamonos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +602,7 @@
 		};
 		8440FF8822AA855700CD00B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7EED9C0E256B92D2B9417E /* Pods-Vamonos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +620,7 @@
 		};
 		8440FF8A22AA855700CD00B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD0497D20D20FAD0DEEEBB1 /* Pods-VamonosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +641,7 @@
 		};
 		8440FF8B22AA855700CD00B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF0CE67CA5E9AC2238EF400 /* Pods-VamonosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +662,7 @@
 		};
 		8440FF8D22AA855700CD00B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAA0461BD1A56EAAF4D6597 /* Pods-VamonosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +682,7 @@
 		};
 		8440FF8E22AA855700CD00B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9734B629443A08E71BFF2D /* Pods-VamonosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

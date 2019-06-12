@@ -9,10 +9,18 @@
 import UIKit
 import JTAppleCalendar
 
-class ViewController: UIViewController {
+
+enum DateMode {
+    case Way
+    case Return
+}
+
+class CalendarViewController: UIViewController {
 
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var okButton: UIButton!
+    
+    var dateMode = DateMode.Way
     
     
     override func viewDidLoad() {
@@ -64,14 +72,20 @@ class ViewController: UIViewController {
     @IBAction func onOkClicked(_ sender: Any) {
         if let mainView = presentingViewController as? MainViewController,
             !calendarView.selectedDates.isEmpty {
-            mainView.departureDate = calendarView.selectedDates[0]
+            
+            switch dateMode {
+            case .Return:
+                mainView.returnDate = calendarView.selectedDates[0]
+            case .Way:
+                mainView.departureDate = calendarView.selectedDates[0]
+            }
         }
      dismiss(animated: true, completion: nil)
     }
 
 }
 
-extension ViewController: JTAppleCalendarViewDataSource {
+extension CalendarViewController: JTAppleCalendarViewDataSource {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd MM yyyy"
@@ -83,7 +97,7 @@ extension ViewController: JTAppleCalendarViewDataSource {
     }
 }
 
-extension ViewController: JTAppleCalendarViewDelegate {
+extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCell
         self.calendar(calendar, willDisplay: cell, forItemAt: date, cellState: cellState, indexPath: indexPath)

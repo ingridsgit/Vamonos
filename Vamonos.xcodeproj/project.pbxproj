@@ -10,7 +10,7 @@
 		30DBF35AFF6329F628577E53 /* Pods_VamonosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C47B43A184E35123623F3D /* Pods_VamonosUITests.framework */; };
 		36E8453B777E9241258E2BAD /* Pods_Vamonos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0177CD2DB65FCD7FD69D338 /* Pods_Vamonos.framework */; };
 		8440FF6222AA855600CD00B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF6122AA855600CD00B7 /* AppDelegate.swift */; };
-		8440FF6422AA855600CD00B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF6322AA855600CD00B7 /* ViewController.swift */; };
+		8440FF6422AA855600CD00B7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440FF6322AA855600CD00B7 /* CalendarViewController.swift */; };
 		8440FF6722AA855600CD00B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440FF6522AA855600CD00B7 /* Main.storyboard */; };
 		8440FF6922AA855600CD00B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8440FF6822AA855600CD00B7 /* Assets.xcassets */; };
 		8440FF6C22AA855600CD00B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440FF6A22AA855600CD00B7 /* LaunchScreen.storyboard */; };
@@ -48,7 +48,7 @@
 		5AF0CE67CA5E9AC2238EF400 /* Pods-VamonosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VamonosTests.release.xcconfig"; path = "Target Support Files/Pods-VamonosTests/Pods-VamonosTests.release.xcconfig"; sourceTree = "<group>"; };
 		8440FF5E22AA855600CD00B7 /* Vamonos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vamonos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8440FF6122AA855600CD00B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8440FF6322AA855600CD00B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8440FF6322AA855600CD00B7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		8440FF6622AA855600CD00B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8440FF6822AA855600CD00B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8440FF6B22AA855600CD00B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			children = (
 				8478ECBF22AFBEB50005164D /* model */,
 				8440FF6122AA855600CD00B7 /* AppDelegate.swift */,
-				8440FF6322AA855600CD00B7 /* ViewController.swift */,
+				8440FF6322AA855600CD00B7 /* CalendarViewController.swift */,
 				8440FF6522AA855600CD00B7 /* Main.storyboard */,
 				8478ECBD22AFA67D0005164D /* MainViewController.swift */,
 				8440FF9122AA93B400CD00B7 /* DateHeader.swift */,
@@ -406,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8440FF6422AA855600CD00B7 /* ViewController.swift in Sources */,
+				8440FF6422AA855600CD00B7 /* CalendarViewController.swift in Sources */,
 				8440FF9022AA871300CD00B7 /* DateCell.swift in Sources */,
 				8440FF9222AA93B400CD00B7 /* DateHeader.swift in Sources */,
 				8440FF6222AA855600CD00B7 /* AppDelegate.swift in Sources */,

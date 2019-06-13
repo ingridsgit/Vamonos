@@ -8,18 +8,35 @@
 
 import UIKit
 import MapKit
+import Alamofire
 
 class AirportViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var searchField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       
     }
     
-
+    @IBAction func onSearchClicked(_ sender: Any) {
+        if let input = searchField.text {
+            let parameters: Parameters = ["term": input]
+            let myRequest = Alamofire.request("http://nano.aviasales.ru/places_fr", parameters: parameters)
+            myRequest.responseJSON(completionHandler: { (dataResponse) in
+                if dataResponse.result.isSuccess {
+                    if let rootArray = dataResponse.result.value as? [Any] {
+//                        print(rootArray[0].description)
+                    }
+                }
+            })
+            
+            
+            
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

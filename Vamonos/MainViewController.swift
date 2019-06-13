@@ -13,8 +13,14 @@ class MainViewController: UIViewController {
     
     var departureDate: Date?
     var returnDate: Date?
+    var adultCount = 1
+    var childCount = 0
+    var babyCount = 0
     
+    @IBOutlet weak var adultCountButton: UIButton!
     @IBOutlet weak var departureDateLabel: UILabel!
+    @IBOutlet weak var babyCountButton: UIButton!
+    @IBOutlet weak var childCountButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var pickWayDateButton: UIButton!
     @IBOutlet weak var pickReturnDateButton: UIButton!
@@ -33,7 +39,9 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         setReturnEnabled()
         setButtonDates()
-        
+        adultCountButton.setTitle(adultCount.description, for: .normal)
+        childCountButton.setTitle(childCount.description, for: .normal)
+        babyCountButton.setTitle(babyCount.description, for: .normal)
     }
    
     @IBAction func onAirportButtonClicked(_ sender: Any) {
@@ -93,6 +101,10 @@ class MainViewController: UIViewController {
     @IBAction func onPassengerButtonClicked(_ sender: UIButton) {
         let passengerVC = self.storyboard?.instantiateViewController(withIdentifier: "passengerVC") as! PassengerViewController
         passengerVC.modalPresentationStyle = UIModalPresentationStyle.currentContext
+        passengerVC.adultCount = self.adultCount
+        passengerVC.childCount = self.childCount
+        passengerVC.babyCount = self.babyCount
+        
         present(passengerVC, animated: true, completion: nil)
     }
 

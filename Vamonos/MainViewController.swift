@@ -36,6 +36,11 @@ class MainViewController: UIViewController {
         
     }
    
+    @IBAction func onAirportButtonClicked(_ sender: Any) {
+        let airportVC = self.storyboard?.instantiateViewController(withIdentifier: "airportVC") as! AirportViewController
+        airportVC.modalPresentationStyle = UIModalPresentationStyle.currentContext
+        present(airportVC, animated: true, completion: nil)
+    }
     
     func setButtonDates(){
         if let departureDate = departureDate {
@@ -86,21 +91,12 @@ class MainViewController: UIViewController {
     
 
     @IBAction func onPassengerButtonClicked(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Qui va voyager ?", message: "Veuillez choisir le nombre de passagers", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Annuler", style: .cancel, handler: nil))
-        let margin:CGFloat = 10.0
-        
-        
-        
-        let rect = CGRect(x: margin, y: margin, width: alert.view.bounds.size.width - margin * 4.0, height: 120)
-        let customView = UIStepper(frame: rect)
-        alert.view.addSubview(customView)
-        
-        self.present(alert, animated: true)
+        let passengerVC = self.storyboard?.instantiateViewController(withIdentifier: "passengerVC") as! PassengerViewController
+        passengerVC.modalPresentationStyle = UIModalPresentationStyle.currentContext
+        present(passengerVC, animated: true, completion: nil)
     }
-    
+
+
     
     @IBAction func onSearchClicked(_ sender: Any) {
         let myRequest = Alamofire.request("https://jsonplaceholder.typicode.com/todos")

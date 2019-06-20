@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import RealmSwift
 
 class MainViewController: UIViewController {
     
@@ -34,6 +35,7 @@ class MainViewController: UIViewController {
         self.definesPresentationContext = true
         searchButton.layer.cornerRadius = 15
         setBudgetLabel()
+        initDatabase()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -123,6 +125,37 @@ class MainViewController: UIViewController {
                 }
             }
         })
+    }
+    
+    func initDatabase(){
+        
+        APIRequests.getAirportListFromJson { (airportList) in
+            
+            do {
+                let realm = try Realm()
+                realm.beginWrite()
+                for airport in airportList {
+                    realm.add(airport)
+                }
+                try realm.commitWrite()
+                print(airportList.description)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+            
+        }
+        
+//        let asset = NSDataAsset(name: "airports", bundle: Bundle.main)
+//        do {
+//            let json = try JSONSerialization.jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)
+//                print(json)
+//        } catch let error {
+//            print(error.localizedDescription)
+//        }
+//        
+        
+        
+        
     }
     
     

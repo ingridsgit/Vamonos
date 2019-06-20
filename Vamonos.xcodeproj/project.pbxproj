@@ -24,6 +24,7 @@
 		8478ECBE22AFA67D0005164D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478ECBD22AFA67D0005164D /* MainViewController.swift */; };
 		8478ECC122AFBEEF0005164D /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478ECC022AFBEEF0005164D /* DateModel.swift */; };
 		84807F9922B3C9ED00C13C98 /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84807F9822B3C9ED00C13C98 /* APIRequests.swift */; };
+		84E1DAB622BB74EE004CB1CE /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1DAB522BB74EE004CB1CE /* Airport.swift */; };
 		F2FC0F098C1137A836686F3C /* Pods_VamonosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3264A8E792C345E31BCB4477 /* Pods_VamonosTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		8478ECBD22AFA67D0005164D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8478ECC022AFBEEF0005164D /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		84807F9822B3C9ED00C13C98 /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		84E1DAB522BB74EE004CB1CE /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		A9C47B43A184E35123623F3D /* Pods_VamonosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VamonosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9734B629443A08E71BFF2D /* Pods-VamonosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VamonosUITests.release.xcconfig"; path = "Target Support Files/Pods-VamonosUITests/Pods-VamonosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DBD0497D20D20FAD0DEEEBB1 /* Pods-VamonosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VamonosTests.debug.xcconfig"; path = "Target Support Files/Pods-VamonosTests/Pods-VamonosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				8478ECC022AFBEEF0005164D /* DateModel.swift */,
 				84807F9822B3C9ED00C13C98 /* APIRequests.swift */,
+				84E1DAB522BB74EE004CB1CE /* Airport.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				8440FF9222AA93B400CD00B7 /* DateHeader.swift in Sources */,
 				8440FF6222AA855600CD00B7 /* AppDelegate.swift in Sources */,
 				84807F9922B3C9ED00C13C98 /* APIRequests.swift in Sources */,
+				84E1DAB622BB74EE004CB1CE /* Airport.swift in Sources */,
 				8478ECBE22AFA67D0005164D /* MainViewController.swift in Sources */,
 				8478ECC122AFBEEF0005164D /* DateModel.swift in Sources */,
 				8475348022B251AD00960F52 /* AirportViewController.swift in Sources */,

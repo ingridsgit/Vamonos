@@ -31,15 +31,15 @@ class AirportViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @objc func inputDidChange(){
         if let input = searchField.text, input.count > 1 {
-            APIRequests.searchCityByName(input: input) { (newCityList:[String]) in
-                self._cityList = newCityList
+            APIRequests.searchAirportbyName(input: input) { (newAirportList:[String]) in
+                self._cityList = newAirportList
                 self.autoFillTableView.reloadData()
                 self.autoFillTableView.isHidden = false
                 
                  // resize tableView
                 let maxTableHeight = 896.0 - Double(self.view.safeAreaInsets.top) - Double(self.searchField.frame.maxY) - Double(self.searchField.frame.height)
                 let remainder = maxTableHeight.truncatingRemainder(dividingBy: 44.0)
-                let height = min(Double(newCityList.count) * 44, Double(maxTableHeight) - remainder)
+                let height = min(Double(newAirportList.count) * 44, Double(maxTableHeight) - remainder)
                 self.cs_tableHeight.constant = CGFloat(height)
             }
             print(_cityList.description)

@@ -16,6 +16,7 @@ class Airport : Object {
     @objc dynamic var latitde: Double = 0
     @objc dynamic var longitude: Double = 0
     @objc dynamic var cityCode: String = ""
+    @objc dynamic var cityName: String = ""
     @objc dynamic var countryCode: String = ""
     
 //    convenience init(code: String,name: String, coordinates: [Double], cityCode: String, countryCode: String) {

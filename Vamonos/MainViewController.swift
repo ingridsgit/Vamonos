@@ -35,7 +35,27 @@ class MainViewController: UIViewController {
         self.definesPresentationContext = true
         searchButton.layer.cornerRadius = 15
         setBudgetLabel()
-        initDatabase()
+        APIRequests.getCitiesFromJson { (cities) in
+            
+            APIRequests.getAirportListFromJson(cities: cities) { (newAirportList) in
+                
+                do {
+                    let database = try Realm()
+                    database.beginWrite()
+                    let oldAirportList = database.objects(Airport.self)
+                    database.delete(oldAirportList)
+                    for airport in newAirportList {
+                        database.add(airport)
+                    }
+                    try database.commitWrite()
+                    print(newAirportList.description)
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -125,37 +145,6 @@ class MainViewController: UIViewController {
                 }
             }
         })
-    }
-    
-    func initDatabase(){
-        
-        APIRequests.getAirportListFromJson { (airportList) in
-            
-            do {
-                let realm = try Realm()
-                realm.beginWrite()
-                for airport in airportList {
-                    realm.add(airport)
-                }
-                try realm.commitWrite()
-                print(airportList.description)
-            } catch let error {
-                print(error.localizedDescription)
-            }
-            
-        }
-        
-//        let asset = NSDataAsset(name: "airports", bundle: Bundle.main)
-//        do {
-//            let json = try JSONSerialization.jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)
-//                print(json)
-//        } catch let error {
-//            print(error.localizedDescription)
-//        }
-//        
-        
-        
-        
     }
     
     

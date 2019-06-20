@@ -9,42 +9,63 @@
 import Foundation
 import Alamofire
 import MapKit
+import RealmSwift
 
 
 class APIRequests {
     static let API_KEY = "1d82d8fede2d239756a91ef78bfb601a"
     
-    
-    static func searchCityByName(input: String, resultHandler: @escaping ([String])->Void){
-    
-        let parameters: Parameters = ["term": input]
+    static func getCitiesFromJson(resultHandler: @escaping ([City])->Void){
         let headers : HTTPHeaders = ["x-access-token": APIRequests.API_KEY]
-        let myRequest = Alamofire.request("https://nano.aviasales.ru/places_en", parameters: parameters, headers: headers)
+        let myRequest = Alamofire.request("https://api.travelpayouts.com/data/cities.json", headers: headers)
         myRequest.responseJSON(completionHandler: {(dataResponse) in
             if dataResponse.result.isSuccess {
                 if let rootArray = dataResponse.result.value as? [[String:Any]] {
-                    var cityList:[String] = []
-                    for array in rootArray {
-                        if let name = array["name"] as? String {
-                            cityList.append(name)
+                    var cityArray: [City] = []
+                    for city in rootArray {
+                        if let code = city["code"] as? String,
+                            let nameTranslation = city["name_translations"] as? [String:String],
+                            let name = nameTranslation["en"] {
+                            let city = City()
+                            city.code = code
+                            city.name = name
+                            cityArray.append(city)
+                            
                         }
                     }
-                    resultHandler(cityList)
+                    resultHandler(cityArray)
                 }
             }
         })
+        
     }
     
-    static func getAirportListFromJson(resultHandler: @escaping ([Airport])->Void){
+    
+    static func searchAirportbyName(input: String, resultHandler: @escaping ([String])->Void){
+        if let database = try? Realm() {
+            var airportNames: [String] = []
+            let airportList = database.objects(Airport.self).filter("(name CONTAINS[c] %@) OR (cityName CONTAINS[c] %@)", input, input)
+            for airport in airportList {
+                airportNames.append(airport.name)
+            }
+            resultHandler(airportNames)
+        }
+    }
+    
+    static func getAirportListFromJson(cities: [City], resultHandler: @escaping ([Airport])->Void){
         let headers : HTTPHeaders = ["x-access-token": APIRequests.API_KEY]
         let myRequest = Alamofire.request("https://api.travelpayouts.com/data/airports.json", headers: headers)
         myRequest.responseJSON(completionHandler: {(dataResponse) in
             if dataResponse.result.isSuccess {
-                if let rootArray = dataResponse.result.value as? [[String:Any]] {
+                if let rootArray = dataResponse.result.value as? [[String:Any]],
+                    let database = try? Realm() {
                     var airportArray: [Airport] = []
                     for array in rootArray {
                         if let code = array["code"] as? String,
-                            let name = array["name"] as? String,
+                            let flightable = array["flightable"] as? Bool,
+                            flightable == true,
+                            let nameTranslation = array["name_translations"] as? [String:String],
+                            let name = nameTranslation["en"],
                             let coordinates = array["coordinates"] as? [String:Double],
                             let longitude = coordinates["lon"],
                             let latitude = coordinates["lat"],
@@ -56,6 +77,8 @@ class APIRequests {
                             airport.longitude = longitude
                             airport.latitde = latitude
                             airport.cityCode = cityCode
+                            let cityWithCode = database.object(ofType: City.self, forPrimaryKey: cityCode)
+                            airport.cityName = cityWithCode?.name ?? ""
                             airport.countryCode = countryCode
                             airportArray.append(airport)
                         }

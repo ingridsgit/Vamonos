@@ -17,7 +17,6 @@ class AirportViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var autoFillTableView: UITableView!
     var _cityList: [String] = []
-    var cellHeight: CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()

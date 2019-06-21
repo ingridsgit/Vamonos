@@ -10,13 +10,14 @@ import UIKit
 import Alamofire
 import RealmSwift
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var departureDate: Date?
     var returnDate: Date?
     var adultCount = 1
     var childCount = 0
     var babyCount = 0
+    var _cityList: [String] = []
     
     @IBOutlet weak var adultCountButton: UIButton!
     @IBOutlet weak var departureDateLabel: UILabel!
@@ -29,15 +30,35 @@ class MainViewController: UIViewController {
     @IBOutlet weak var departureTextField: UITextField!
     @IBOutlet weak var budgetLabel: UILabel!
     @IBOutlet weak var budgetSlider: UISlider!
+    @IBOutlet weak var autofillSearchTable: UITableView!
+    @IBOutlet weak var cs_tableHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.definesPresentationContext = true
+        departureTextField.addTarget(self, action: #selector(inputDidChange), for: .editingChanged)
+        autofillSearchTable.dataSource = self
+        autofillSearchTable.delegate = self
+        autofillSearchTable.isHidden = true
         searchButton.layer.cornerRadius = 15
         setBudgetLabel()
         APIRequests.getCitiesFromJson { (cities) in
             
-            APIRequests.getAirportListFromJson(cities: cities) { (newAirportList) in
+            do {
+                let database = try Realm()
+                database.beginWrite()
+                let oldCityList = database.objects(City.self)
+                database.delete(oldCityList)
+                for city in cities {
+                    database.add(city)
+                }
+                try database.commitWrite()
+            }
+            catch let error {
+                print(error.localizedDescription)
+            }
+            
+            APIRequests.getAirportListFromJson() { (newAirportList) in
                 
                 do {
                     let database = try Realm()
@@ -56,6 +77,24 @@ class MainViewController: UIViewController {
         }
         
     
+    }
+    
+    @objc func inputDidChange(){
+        if let input = departureTextField.text, input.count > 1 {
+            APIRequests.searchAirportbyName(input: input) { (newAirportList:[String]) in
+                self._cityList = newAirportList
+                self.autofillSearchTable.reloadData()
+                self.autofillSearchTable.isHidden = false
+                
+                // resize tableView
+                let maxTableHeight = 896.0 - Double(self.view.safeAreaInsets.top) - Double(self.departureTextField.frame.maxY) - Double(self.departureTextField.frame.height)
+                let remainder = maxTableHeight.truncatingRemainder(dividingBy: 44.0)
+                let height = min(Double(newAirportList.count) * 44, Double(maxTableHeight) - remainder)
+                self.cs_tableHeight.constant = CGFloat(height)
+            }
+            print(_cityList)
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -145,6 +184,23 @@ class MainViewController: UIViewController {
                 }
             }
         })
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return _cityList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomSearchFieldCell", for: indexPath) as UITableViewCell
+        cell.backgroundColor = UIColor.clear
+        cell.textLabel?.text = _cityList[indexPath.row]
+        return cell
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        departureTextField.text = _cityList[indexPath.row]
+        tableView.isHidden = true
+        departureTextField.endEditing(true)
     }
     
     

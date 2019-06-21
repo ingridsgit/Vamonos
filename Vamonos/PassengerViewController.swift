@@ -21,6 +21,7 @@ class PassengerViewController: UIViewController {
     var childCount = 0
     var babyCount = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -58,6 +59,8 @@ class PassengerViewController: UIViewController {
         }
         dismiss(animated: true, completion: nil)
     }
+    
+    
     /*
     // MARK: - Navigation
 

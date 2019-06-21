@@ -52,7 +52,7 @@ class APIRequests {
         }
     }
     
-    static func getAirportListFromJson(cities: [City], resultHandler: @escaping ([Airport])->Void){
+    static func getAirportListFromJson(resultHandler: @escaping ([Airport])->Void){
         let headers : HTTPHeaders = ["x-access-token": APIRequests.API_KEY]
         let myRequest = Alamofire.request("https://api.travelpayouts.com/data/airports.json", headers: headers)
         myRequest.responseJSON(completionHandler: {(dataResponse) in

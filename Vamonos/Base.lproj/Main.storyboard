@@ -267,13 +267,41 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2X4-ay-gmW">
+                                <rect key="frame" x="70" y="281.5" width="274" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="o2X-2M-yX8"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomSearchFieldCell" textLabel="oBB-7x-kX5" style="IBUITableViewCellStyleDefault" id="A9m-1P-iPS">
+                                        <rect key="frame" x="0.0" y="28" width="274" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A9m-1P-iPS" id="HnH-wp-ymZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="274" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oBB-7x-kX5">
+                                                    <rect key="frame" x="16" y="0.0" width="242" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.75505503228452675" blue="0.32075584624156062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aS1-h4-Rsp" firstAttribute="trailing" secondItem="eif-gX-qYh" secondAttribute="trailing" constant="16" id="27s-Hv-TMZ"/>
+                            <constraint firstItem="2X4-ay-gmW" firstAttribute="width" secondItem="QTD-T5-EfJ" secondAttribute="width" id="6KX-Ox-WBH"/>
                             <constraint firstItem="aS1-h4-Rsp" firstAttribute="trailing" secondItem="IzT-Ep-cr4" secondAttribute="trailing" constant="16" id="86P-zx-oan"/>
                             <constraint firstItem="tB4-3H-xzd" firstAttribute="leading" secondItem="GGQ-hs-s2N" secondAttribute="leading" id="9tL-L7-GoI"/>
                             <constraint firstItem="eif-gX-qYh" firstAttribute="leading" secondItem="aS1-h4-Rsp" secondAttribute="leading" constant="16" id="CHM-YT-My9"/>
+                            <constraint firstItem="2X4-ay-gmW" firstAttribute="leading" secondItem="QTD-T5-EfJ" secondAttribute="leading" id="DOs-v5-Gtg"/>
                             <constraint firstItem="aS1-h4-Rsp" firstAttribute="trailing" secondItem="DF1-1N-JRD" secondAttribute="trailing" constant="16" id="FN1-fT-U1j"/>
                             <constraint firstItem="IIY-1i-RWu" firstAttribute="leading" secondItem="aS1-h4-Rsp" secondAttribute="leading" constant="16" id="K3Y-Uf-Lwb"/>
                             <constraint firstItem="9mq-qW-GgM" firstAttribute="top" secondItem="aS1-h4-Rsp" secondAttribute="top" constant="16" id="PfC-Co-Xfn"/>
@@ -302,10 +330,12 @@
                     <navigationItem key="navigationItem" id="PA0-04-5Jp"/>
                     <connections>
                         <outlet property="adultCountButton" destination="hXA-Sz-tJ1" id="zHk-Sl-Eor"/>
+                        <outlet property="autofillSearchTable" destination="2X4-ay-gmW" id="9lf-k3-nRF"/>
                         <outlet property="babyCountButton" destination="5dm-kc-OZJ" id="ROd-Wx-zh9"/>
                         <outlet property="budgetLabel" destination="2hz-BY-H7O" id="qPW-Nr-ePu"/>
                         <outlet property="budgetSlider" destination="pfe-id-G3B" id="VNq-sP-DIY"/>
                         <outlet property="childCountButton" destination="N6H-Bs-lV4" id="UQi-3S-GyI"/>
+                        <outlet property="cs_tableHeight" destination="o2X-2M-yX8" id="eu9-Dr-mgo"/>
                         <outlet property="departureDateLabel" destination="BD6-Z1-OdD" id="lsl-kD-OqN"/>
                         <outlet property="departureTextField" destination="QTD-T5-EfJ" id="cEx-wU-SfV"/>
                         <outlet property="pickReturnDateButton" destination="vZL-5o-Y4m" id="3d9-We-pdx"/>
